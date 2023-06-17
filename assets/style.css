@@ -1,0 +1,48 @@
+/* .spinner {
+    width: 350px;
+    height: 350px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+} */
+
+.option {
+    position: absolute;
+    top: 30%;
+    left: 1%;
+    transform-origin: top center;
+    width: 0;
+    height: 0;
+    margin-left: 350px;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 200px solid lime;
+    border-radius: 50%;
+    transition: transform 3s ease-in-out;
+}
+
+.option:nth-child(1) {
+    transform: rotate(0deg);
+}
+
+.option:nth-child(2) {
+    transform: rotate(60deg);
+}
+
+.option:nth-child(3) {
+    transform: rotate(120deg);
+}
+
+.option:nth-child(4) {
+    transform: rotate(180deg);
+}
+
+.option:nth-child(5) {
+    transform: rotate(240deg);
+}
+
+.option:nth-child(6) {
+    transform: rotate(300deg);
+}
+
