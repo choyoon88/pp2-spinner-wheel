@@ -9,8 +9,7 @@
 
 .option {
     position: absolute;
-    top: 30%;
-    left: 1%;
+    top: 50%;
     transform-origin: top center;
     width: 0;
     height: 0;
