@@ -1,25 +1,61 @@
-/* .spinner {
-    width: 350px;
-    height: 350px;
+
+/* Spinner and the wheel cones */
+
+.spinner {
+    position: absolute;
+    top: 0;
+    left: 25%;
+    width: 400px;
+    height: 400px;
     border: 2px solid black;
     border-radius: 50%;
     position: relative;
     overflow: hidden;
-} */
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* cone colours */
+
+.red {
+    border-bottom: 200px solid red !important;
+}
+
+.blue {
+    border-bottom: 200px solid blue !important;
+}
+
+.green {
+    border-bottom: 200px solid green !important;
+}
+
+.yellow {
+    border-bottom: 200px solid yellow !important;
+}
+
+.orange {
+    border-bottom: 200px solid orange !important;
+}
+
+.purple {
+    border-bottom: 200px solid purple !important;
+}
+
 
 .option {
     position: absolute;
     top: 50%;
+    right: 25%;
     transform-origin: top center;
     width: 0;
     height: 0;
     margin-left: 350px;
-    border-left: 150px solid transparent;
-    border-right: 150px solid transparent;
-    border-bottom: 200px solid lime;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
     border-radius: 50%;
     transition: transform 3s ease-in-out;
 }
+
+/* cone rotations */
 
 .option:nth-child(1) {
     transform: rotate(0deg);
@@ -43,5 +79,39 @@
 
 .option:nth-child(6) {
     transform: rotate(300deg);
+}
+
+/* spin button */
+
+#spin-btn {
+    position: absolute; 
+    top: 14px;
+    left: 14px; 
+    margin: 154px 0px 0px 155px;
+    border-radius: 50%;
+    border-color: rgba(0, 0, 0, 0.2);
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #ccc0c0;
+}
+
+#spin-btn:hover {
+    background-color:#fff;
+    transition: 0.3s;
+}
+
+#spin-btn::before {
+    content: ' ';
+    position: absolute;
+    top: -24px;
+    left: 18px;
+    width: 20px;
+    height: 23px;
+    background-color: #ccc0c0;
+    clip-path: polygon(50% 0%, 15% 100%, 85% 100%);
 }
 
