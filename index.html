@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/style.css" />
     <title>Spinner Wheels</title>
-    <link rel="icon" type="icon" href="spinning-wheel.ico">
+    <link rel="icon" href="spinning-wheel.ico" />
   </head>
   <body>
     <div class="container">
-      <div id="spinner">
+      <div id="spinner" class="inline-block">
         <div class="option red"><span class="text"></span></div>
         <div class="option blue"><span class="text"></span></div>
         <div class="option green"><span class="text"></span></div>
@@ -18,6 +18,14 @@
         <div class="option purple"><span class="text"></span></div>
       </div>
       <button id="spin-btn" onclick="spin()">spin</button>
+    </div>
+    <div id="text-input" class="inline-block">
+      <div><input type="text"></div>
+      <div><input type="text"></div>
+      <div><input type="text"></div>
+      <div><input type="text"></div>
+      <div><input type="text"></div>
+      <div><input type="text"></div>
     </div>
     <script src="assets/script.js"></script>
   </body>
