@@ -2,9 +2,8 @@
 /* Spinner and the wheel cones */
 
 #spinner {
-    position: absolute;
-    top: 20vh;
-    left: 30%;
+    position: relative;
+    margin: 20vh auto;
     width: 400px;
     height: 400px;
     border: 2px solid black;
@@ -85,8 +84,9 @@
 
 #spin-btn {
     position: absolute; 
-    top: 39%;
-    left: 44%;
+    bottom: 55%;
+    left: 50%;
+    transform: translateX(-50%);
     border-radius: 50%;
     border-color: rgba(0, 0, 0, 0.2);
     width: 60px;
