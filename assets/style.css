@@ -1,7 +1,7 @@
 .container {
-    display: flex; 
-    align-items: flex-start; 
-    justify-content: center; 
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 /* Spinner and the wheel cones */
@@ -20,27 +20,27 @@
 
 /* cone colours */
 
-.red {
+#red {
     border-bottom: 200px solid red !important;
 }
 
-.blue {
+#blue {
     border-bottom: 200px solid blue !important;
 }
 
-.green {
+#green {
     border-bottom: 200px solid green !important;
 }
 
-.yellow {
+#yellow {
     border-bottom: 200px solid yellow !important;
 }
 
-.orange {
+#orange {
     border-bottom: 200px solid orange !important;
 }
 
-.purple {
+#purple {
     border-bottom: 200px solid purple !important;
 }
 
@@ -102,7 +102,7 @@
 }
 
 #spin-btn:hover {
-    background-color:#fff;
+    background-color: #fff;
     transition: 0.3s;
 }
 
@@ -119,8 +119,22 @@
 
 /* text input */
 
+span h5 {
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 250%);
+    max-height: 25px;
+}
+
 #text-input {
     position: fixed;
     top: 32vh;
     left: 16vw;
+}
+
+.option {
+    font-size: 20px;
+    color: black;
 }
