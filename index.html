@@ -8,25 +8,51 @@
     <link rel="icon" href="spinning-wheel.ico" />
   </head>
   <body>
+    <h1>Tell Me What To Do, Spinner Wheel!</h1>
+    <p id="rules">
+      Rules: Tired of decision making what to do next?<br />
+      Enter 6 different things you need to do, how you want it to do, and when
+      to do.<br />
+      Example: I will 'start coding study' 'excessively' 'an hour later'
+    </p>
     <div class="container">
       <div id="spinner" class="inline-block">
-        <div class="option" id="red"><span class="text"><h5></h5></span></div>
-        <div class="option" id="blue"><span class="text"><h5></h5></span></div>
-        <div class="option" id="green"><span class="text"><h5></h5></span></div>
-        <div class="option" id="yellow"><span class="text"><h5></h5></span></div>
-        <div class="option" id="orange"><span class="text"><h5></h5></span></div>
-        <div class="option" id="purple"><span class="text"><h5></h5></span></div>
+        <div class="option" id="red">
+          <span class="text"><h5></h5></span>
+        </div>
+        <div class="option" id="blue">
+          <span class="text"><h5></h5></span>
+        </div>
+        <div class="option" id="green">
+          <span class="text"><h5></h5></span>
+        </div>
+        <div class="option" id="yellow">
+          <span class="text"><h5></h5></span>
+        </div>
+        <div class="option" id="orange">
+          <span class="text"><h5></h5></span>
+        </div>
+        <div class="option" id="purple">
+          <span class="text"><h5></h5></span>
+        </div>
       </div>
       <button id="spin-btn" onclick="spin()">spin</button>
     </div>
     <div id="text-input" class="inline-block">
-      <div>Red Cone<input type="text" id="red-text"></div>
-      <div>Blue Cone<input type="text" id="blue-text"></div>
-      <div>Green Cone<input type="text" id="green-text"></div>
-      <div>Yellow Cone<input type="text" id="yellow-text"></div>
-      <div>Orange Cone<input type="text" id="orange-text"></div>
-      <div>Purple Cone<input type="text" id="purple-text"></div>
+      <div>Red Cone<input type="text" id="red-text" /></div>
+      <div>Blue Cone<input type="text" id="blue-text" /></div>
+      <div>Green Cone<input type="text" id="green-text" /></div>
+      <div>Yellow Cone<input type="text" id="yellow-text" /></div>
+      <div>Orange Cone<input type="text" id="orange-text" /></div>
+      <div>Purple Cone<input type="text" id="purple-text" /></div>
     </div>
+    <p id="statement">I will</p>
     <script src="assets/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
   </body>
 </html>

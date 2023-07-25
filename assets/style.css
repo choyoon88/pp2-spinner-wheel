@@ -1,7 +1,33 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    position: relative;
+    top: 35px;
+}
+
+#rules {
+    text-align: center;
+    position: relative;
+    top: 45px;
+    line-height: 20px;
+}
+
+#statement {
+    text-align: center;
+    font-size: 30px;
+    margin: -100px 0;
+}
+
 .container {
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    /* position: absolute;
+    margin: -3px 0 0 170px; */
 }
 
 /* Spinner and the wheel cones */
@@ -88,7 +114,7 @@
 /* spin button */
 
 #spin-btn {
-    position: fixed;
+    position: absolute;
     margin: 300px;
     border-radius: 50%;
     border-color: rgba(0, 0, 0, 0.2);
@@ -99,6 +125,7 @@
     font-weight: 700;
     text-transform: uppercase;
     background-color: #ccc0c0;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 #spin-btn:hover {
@@ -126,13 +153,15 @@ span h5 {
     left: 50%;
     transform: translate(-50%, 250%);
     max-height: 25px;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 #text-input {
-    position: fixed;
+    position: absolute;
     right: 70px;
-    top: 160px;
+    top: 550px;
     text-align: end;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .option {
