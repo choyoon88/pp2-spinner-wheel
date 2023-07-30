@@ -1,12 +1,19 @@
 function spin() {
     const spinner = document.getElementById('spinner');
-
-    let randomAngle = Math.floor(Math.random() * 3600 + 360);
+    const randomAngle = Math.floor(Math.random() * 3600 + 360);
 
     spinner.style.transition = 'transform 3s ease-out';
     spinner.style.transform = `rotate(${randomAngle}deg)`;
-    console.log(`rotate(${randomAngle}deg)`)
-}
+    console.log(`rotate(${randomAngle}deg)`) // To be removed before deploying. This is only for dev check
+
+    function selectAnswer() {    
+        if (randomAngle % 360 <= 0 && randomAngle % 360 >= 16) {
+            document.getElementById('statement').append(document.getElementById('yellow-text'));            
+        };
+    
+    };
+    setTimeout(selectAnswer, 1000);
+};
 
 const textInputs = document.querySelectorAll('#text-input input');
 
@@ -26,11 +33,6 @@ function updateConeText(index, value) {
         textElement.textContent = value;
     } else {
         option.querySelector('.text').textContent = value;
-    }
-}
+    };
+};
 
-function selectAnswer() {
-    const arrow = document.getElementById('#spin-btn');
-
-
-}
