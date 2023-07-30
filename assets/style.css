@@ -74,15 +74,13 @@ h1 {
 .option {
     position: absolute;
     top: 50%;
-    right: 25%;
+    right: 22%;
     transform-origin: top center;
     width: 0;
     height: 0;
-    margin-left: 350px;
-    border-left: 100px solid transparent;
-    border-right: 100px solid transparent;
-    border-radius: 50%;
-    transition: transform 3s ease-in-out;
+    border-left: 114px solid transparent;
+    border-right: 111px solid transparent;
+    /* transition: transform 3s ease-in-out; */
 }
 
 /* cone rotations */
