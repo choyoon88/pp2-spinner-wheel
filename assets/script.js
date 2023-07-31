@@ -6,9 +6,14 @@ function spin() {
     spinner.style.transform = `rotate(${randomAngle}deg)`;
     console.log(`rotate(${randomAngle}deg)`) // To be removed before deploying. This is only for dev check
 
-    function selectAnswer() {    
-        if (randomAngle % 360 <= 0 && randomAngle % 360 >= 16) {
-            document.getElementById('statement').append(document.getElementById('yellow-text'));            
+    function selectAnswer() {
+        let decimalOfRandomAngle = (randomAngle / 360) % 1;
+        if (decimalOfRandomAngle > 0.92 || decimalOfRandomAngle <= 0.09) {
+            console.log(decimalOfRandomAngle); // To be removed before deploying. This is only for dev check
+            let yellowUserInput = document.getElementById('yellow-text');
+            let displayYellowText = document.getElementById('first-select');
+            displayYellowText.innerText += yellowUserInput.value;
+
         };
     
     };

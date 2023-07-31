@@ -91,7 +91,7 @@ h1 {
 
 .option:nth-child(2) {
     transform: rotate(60deg);
-}
+} 
 
 .option:nth-child(3) {
     transform: rotate(120deg);
