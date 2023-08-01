@@ -7,7 +7,6 @@ function spin() {
 
     spinner.style.transition = 'transform 3s ease-out';
     spinner.style.transform = `rotate(${randomAngle}deg)`;
-    console.log(`rotate(${randomAngle}deg)`) // To be removed before deploying. This is only for dev check
 
     let decimalOfRandomAngle = (randomAngle / 360) % 1;
 
@@ -15,7 +14,6 @@ function spin() {
         case 1:
             function selectFirstAnswer() {
                 if (decimalOfRandomAngle > 0.92 || decimalOfRandomAngle <= 0.09) {
-                    console.log(decimalOfRandomAngle + ' yellow'); // To be removed before deploying. This is only for dev check
                     let yellowUserInput = document.getElementById('yellow-text');
                     let displayYellowText = document.getElementById('first-select');
                     setTimeout(function () {
@@ -23,7 +21,6 @@ function spin() {
                     }, 3500);
                 } else {
                     if (decimalOfRandomAngle > 0.09 && decimalOfRandomAngle <= 0.25) {
-                        console.log(decimalOfRandomAngle + ' green'); // To be removed before deploying. This is only for dev check
                         let greenUserInput = document.getElementById('green-text');
                         let displayGreenText = document.getElementById('first-select');
                         setTimeout(function () {
@@ -31,7 +28,6 @@ function spin() {
                         }, 3500);
                     } else {
                         if (decimalOfRandomAngle > 0.25 && decimalOfRandomAngle <= 0.41) {
-                            console.log(decimalOfRandomAngle + ' blue'); // To be removed before deploying. This is only for dev check
                             let blueUserInput = document.getElementById('blue-text');
                             let displayBlueText = document.getElementById('first-select');
                             setTimeout(function () {
@@ -39,7 +35,6 @@ function spin() {
                             }, 3500);
                         } else {
                             if (decimalOfRandomAngle > 0.41 && decimalOfRandomAngle <= 0.57) {
-                                console.log(decimalOfRandomAngle + ' red'); // To be removed before deploying. This is only for dev check
                                 let redUserInput = document.getElementById('red-text');
                                 let displayRedText = document.getElementById('first-select');
                                 setTimeout(function () {
@@ -47,7 +42,6 @@ function spin() {
                                 }, 3500);
                             } else {
                                 if (decimalOfRandomAngle > 0.57 && decimalOfRandomAngle <= 0.73) {
-                                    console.log(decimalOfRandomAngle + ' purple'); // To be removed before deploying. This is only for dev check
                                     let purpleUserInput = document.getElementById('purple-text');
                                     let displayPurpleText = document.getElementById('first-select');
                                     setTimeout(function () {
@@ -55,7 +49,6 @@ function spin() {
                                     }, 3500);
                                 } else {
                                     if (decimalOfRandomAngle > 0.73 && decimalOfRandomAngle <= 0.91) {
-                                        console.log(decimalOfRandomAngle + ' orange'); // To be removed before deploying. This is only for dev check
                                         let orangeUserInput = document.getElementById('orange-text');
                                         let displayOrangeText = document.getElementById('first-select');
                                         setTimeout(function () {
@@ -176,14 +169,16 @@ function spin() {
                     };
                 };
             };
-            setTimeout(selectThirdAnswer, 1000);
+            setTimeout(selectThirdAnswer, 1000);            
             break;
-            default:
-                spinClickCount = 0;
-                break;
-    }; 
-};
+        default:
+            spinClickCount = 0;
+            break;
+    };
+}; 
 
+
+// text input on cones functions
 
 const textInputs = document.querySelectorAll('#text-input input');
 
@@ -204,4 +199,21 @@ function updateConeText(index, value) {
     } else {
         option.querySelector('.text').textContent = value;
     };
+};
+
+
+// reset functions
+
+function resetStatement() {
+    const spans = document.querySelectorAll('#first-select, #second-select, #third-select');
+    spans.forEach(span => {
+        span.textContent = '';
+    });
+};
+
+function resetText() {
+    const texts = document.querySelectorAll('#red-text, #blue-text, #green-text, #yellow-text, #orange-text, #purple-text');
+    texts.forEach(text => {
+        text.value = '';
+    });
 };

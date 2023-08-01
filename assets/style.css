@@ -142,6 +142,27 @@ h1 {
     clip-path: polygon(50% 0%, 15% 100%, 85% 100%);
 }
 
+/* reset button */
+
+#reset {
+    border-radius: 10%;
+    border-color: rgba(0, 0, 0, 0.2);
+    width: 70px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #ccc0c0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#reset:hover {
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+
 /* text input */
 
 span h5 {
@@ -169,4 +190,32 @@ span h5 {
 
 input {
     margin: 5px;
+}
+
+
+/* Media query */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }

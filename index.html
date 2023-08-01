@@ -11,6 +11,7 @@
     <h1>Tell Me What To Do, Spinner Wheel!</h1>
     <p id="rules">
       Rules: Tired of making decisions of what to do next?<br />
+      There are two areas
       Enter 6 different things you need to do, how you want it to do, and when
       to do.<br />
       Example: I will 'start coding study' 'excessively' 'an hour later'
@@ -37,18 +38,20 @@
         </div>
       </div>
       <button id="spin-btn" onclick="spin()">spin</button>
+      
     </div>
     <div id="text-input" class="inline-block">
-      <div>Red Cone<input type="text" id="red-text" /></div>
-      <div>Blue Cone<input type="text" id="blue-text" /></div>
-      <div>Green Cone<input type="text" id="green-text" /></div>
-      <div>Yellow Cone<input type="text" id="yellow-text" /></div>
-      <div>Orange Cone<input type="text" id="orange-text" /></div>
-      <div>Purple Cone<input type="text" id="purple-text" /></div>
+      <div>Red Cone<input type="text" id="red-text" onclick="resetText()"/></div>
+      <div>Blue Cone<input type="text" id="blue-text" onclick="resetText()"/></div>
+      <div>Green Cone<input type="text" id="green-text" onclick="resetText()"/></div>
+      <div>Yellow Cone<input type="text" id="yellow-text" onclick="resetText()"/></div>
+      <div>Orange Cone<input type="text" id="orange-text" onclick="resetText()"/></div>
+      <div>Purple Cone<input type="text" id="purple-text" onclick="resetText()"/></div>
     </div>
     <p id="statement">
       I will <span id="first-select"></span> <span id="second-select"></span>
-      <span id="third-select"></span>
+      <span id="third-select"></span><br>
+      <button id="reset" onclick="resetStatement()">Reset</button>
     </p>
     <script src="assets/script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
