@@ -211,9 +211,26 @@ function resetStatement() {
     });
 };
 
-function resetText() {
-    const texts = document.querySelectorAll('#red-text, #blue-text, #green-text, #yellow-text, #orange-text, #purple-text');
-    texts.forEach(text => {
-        text.value = '';
-    });
+function resetRedText() {
+    document.getElementById('red-text').value = '';
+};
+
+function resetBlueText() {
+    document.getElementById('blue-text').value = '';
+};
+
+function resetGreenText() {
+    document.getElementById('green-text').value = '';
+};
+
+function resetYellowText() {
+    document.getElementById('yellow-text').value = '';
+};
+
+function resetOrangeText() {
+    document.getElementById('orange-text').value = '';
+};
+
+function resetPurpleText() {
+    document.getElementById('purple-text').value = '';
 };
