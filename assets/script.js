@@ -1,3 +1,39 @@
+// reset functions
+
+function resetStatement() {
+    const spans = document.querySelectorAll('#first-select, #second-select, #third-select');
+    spans.forEach(span => {
+        span.textContent = '';
+    });
+};
+
+function resetRedText() {
+    document.getElementById('red-text').value = '';
+};
+
+function resetBlueText() {
+    document.getElementById('blue-text').value = '';
+};
+
+function resetGreenText() {
+    document.getElementById('green-text').value = '';
+};
+
+function resetYellowText() {
+    document.getElementById('yellow-text').value = '';
+};
+
+function resetOrangeText() {
+    document.getElementById('orange-text').value = '';
+};
+
+function resetPurpleText() {
+    document.getElementById('purple-text').value = '';
+};
+
+
+// spin functions
+
 let spinClickCount = 0;
 
 function spin() {
@@ -8,7 +44,8 @@ function spin() {
     spinner.style.transition = 'transform 3s ease-out';
     spinner.style.transform = `rotate(${randomAngle}deg)`;
 
-    let decimalOfRandomAngle = (randomAngle / 360) % 1;
+    let decimalOfRandomAngle = ((randomAngle / 360) % 1).toFixed(2);
+    decimalOfRandomAngle = parseFloat(decimalOfRandomAngle);
 
     switch (spinClickCount) {
         case 1:
@@ -41,14 +78,14 @@ function spin() {
                                     displayRedText.innerText += redUserInput.value + ' ';
                                 }, 3500);
                             } else {
-                                if (decimalOfRandomAngle > 0.57 && decimalOfRandomAngle <= 0.73) {
+                                if (decimalOfRandomAngle > 0.57 && decimalOfRandomAngle <= 0.74) {
                                     let purpleUserInput = document.getElementById('purple-text');
                                     let displayPurpleText = document.getElementById('first-select');
                                     setTimeout(function () {
                                         displayPurpleText.innerText += purpleUserInput.value + ' ';
                                     }, 3500);
                                 } else {
-                                    if (decimalOfRandomAngle > 0.73 && decimalOfRandomAngle <= 0.91) {
+                                    if (decimalOfRandomAngle > 0.74 && decimalOfRandomAngle <= 0.91) {
                                         let orangeUserInput = document.getElementById('orange-text');
                                         let displayOrangeText = document.getElementById('first-select');
                                         setTimeout(function () {
@@ -168,14 +205,29 @@ function spin() {
                         };
                     };
                 };
-            };
-            setTimeout(selectThirdAnswer, 1000);            
+            console.log(decimalOfRandomAngle);
+        };
+            selectThirdAnswer();
+            setTimeout(() => {
+                let finishedStatement = document.querySelectorAll('#first-select, #second-select, #third-select')[0].innerText + 
+                    document.querySelectorAll('#first-select, #second-select, #third-select')[1].innerText + 
+                    document.querySelectorAll('#first-select, #second-select, #third-select')[2].innerText;
+
+                function alertMessageAndResetSpin() {
+                    alert(`Here you go! I will ${finishedStatement}`);
+                    resetStatement();
+                }
+                alertMessageAndResetSpin();
+            }, 4000);
+
             break;
+
         default:
-            spinClickCount = 0;
+            spinClickCount = 1;
+            selectFirstAnswer();
             break;
     };
-}; 
+};
 
 
 // text input on cones functions
@@ -199,38 +251,4 @@ function updateConeText(index, value) {
     } else {
         option.querySelector('.text').textContent = value;
     };
-};
-
-
-// reset functions
-
-function resetStatement() {
-    const spans = document.querySelectorAll('#first-select, #second-select, #third-select');
-    spans.forEach(span => {
-        span.textContent = '';
-    });
-};
-
-function resetRedText() {
-    document.getElementById('red-text').value = '';
-};
-
-function resetBlueText() {
-    document.getElementById('blue-text').value = '';
-};
-
-function resetGreenText() {
-    document.getElementById('green-text').value = '';
-};
-
-function resetYellowText() {
-    document.getElementById('yellow-text').value = '';
-};
-
-function resetOrangeText() {
-    document.getElementById('orange-text').value = '';
-};
-
-function resetPurpleText() {
-    document.getElementById('purple-text').value = '';
 };

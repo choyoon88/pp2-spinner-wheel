@@ -11,10 +11,10 @@
     <h1>Tell Me What To Do, Spinner Wheel!</h1>
     <p id="rules">
       Rules: Tired of making decisions of what to do next?<br />
-      There are two areas
-      Enter 6 different things you need to do, how you want it to do, and when
-      to do.<br />
-      Example: I will 'start coding study' 'excessively' 'an hour later'
+      Complete the sentence after 'I will...' with your choices chosen randomly three times by the spinner wheel.<br>
+      Simply enter anything on each 6 different cone's text box and click SPIN!<br>
+      RESET will reset the sentence and restart the process.<br>
+      Example: I will... 'drink beer' 'with a happy smile' 'after coding'
     </p>
     <div class="container">
       <div id="spinner" class="inline-block">
@@ -41,15 +41,15 @@
       
     </div>
     <div id="text-input" class="inline-block">
-      <div>Red Cone<input type="text" id="red-text" onclick="resetRedText()"/></div>
-      <div>Blue Cone<input type="text" id="blue-text" onclick="resetBlueText()"/></div>
-      <div>Green Cone<input type="text" id="green-text" onclick="resetGreenText()"/></div>
-      <div>Yellow Cone<input type="text" id="yellow-text" onclick="resetYellowText()"/></div>
-      <div>Orange Cone<input type="text" id="orange-text" onclick="resetOrangeText()"/></div>
-      <div>Purple Cone<input type="text" id="purple-text" onclick="resetPurpleText()"/></div>
+      <div>Red Cone<input type="text" id="red-text" onclick="resetRedText()" maxlength="39"/></div>
+      <div>Blue Cone<input type="text" id="blue-text" onclick="resetBlueText()" maxlength="39"/></div>
+      <div>Green Cone<input type="text" id="green-text" onclick="resetGreenText()" maxlength="39"/></div>
+      <div>Yellow Cone<input type="text" id="yellow-text" onclick="resetYellowText()" maxlength="39"/></div>
+      <div>Orange Cone<input type="text" id="orange-text" onclick="resetOrangeText()" maxlength="39"/></div>
+      <div>Purple Cone<input type="text" id="purple-text" onclick="resetPurpleText()" maxlength="39"/></div>
     </div>
     <p id="statement">
-      I will <span id="first-select"></span> <span id="second-select"></span>
+      I will... <span id="first-select"></span> <span id="second-select"></span>
       <span id="third-select"></span><br>
       <button id="reset" onclick="resetStatement()">Reset</button>
     </p>
