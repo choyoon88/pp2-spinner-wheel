@@ -196,12 +196,136 @@ input {
 /* Media query */
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 300px) {
+    h1 {
+        font-size: 34px;
+    }
 
+    #rules {
+        font-size: 15px;
+    }
+    
+    #text-input {
+        top: 930px;
+        right: 10px;
+    }
+
+    #statement {
+        font-size: 25px;
+    }
+
+    #spinner {
+        width: 250px;
+        height: 250px;
+    }
+
+    .option {
+        right: 6%;
+    }
+    
+    #spin-btn {
+        margin: 230px;
+    }
+
+    span h5 {
+        font-size: 11px;
+        max-height: 8px;
+    }
+    
+    #statement {
+        font-size: 16px;
+    }
+
+    #spin-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 14px;
+    }
+    #spin-btn::before {
+        top: -23px;
+        left: 13px;
+    }
+
+    #reset {
+        width: 55px;
+        height: 30px;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 300px) {
+    h1 {
+        font-size: 34px;
+    }
+
+    #rules {
+        font-size: 15px;
+        text-align: justify;
+    }
+    
+    #spinner {
+        width: 310px;
+        height: 310px;
+    }
+
+    .option {
+        right: 12%;
+    }
+
+    #spin-btn {
+        margin: 260px;
+    }
+
+    span h5 {
+        font-size: 14px;
+        max-height: 15px;
+    }
+
+    #text-input {
+        right: 10px;
+        top: 930px;
+    }
+
+    #statement {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    #spinner {
+        width: 300px;
+        height: 300px;
+    }
+
+    #text-input {
+        top: 1020px;
+    }
+
+    .option {
+        right: 13%;
+    }
+
+    #spin-btn {
+        margin: 260px;
+    }
+
+    #statement {
+        font-size: 20px;
+    }
+
+    span h5 {
+        font-size: 12px;
+        max-height: 12px;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+    #spinner {
+        width: 400px;
+        height: 400px;
+    }
+
 
 }
 

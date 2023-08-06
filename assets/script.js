@@ -50,14 +50,14 @@ function spin() {
     switch (spinClickCount) {
         case 1:
             function selectFirstAnswer() {
-                if (decimalOfRandomAngle > 0.92 || decimalOfRandomAngle <= 0.09) {
+                if (decimalOfRandomAngle > 0.92 || decimalOfRandomAngle < 0.09) {
                     let yellowUserInput = document.getElementById('yellow-text');
                     let displayYellowText = document.getElementById('first-select');
                     setTimeout(function () {
                         displayYellowText.innerText += yellowUserInput.value + ' ';
                     }, 3500);
                 } else {
-                    if (decimalOfRandomAngle > 0.09 && decimalOfRandomAngle <= 0.25) {
+                    if (decimalOfRandomAngle >= 0.09 && decimalOfRandomAngle <= 0.25) {
                         let greenUserInput = document.getElementById('green-text');
                         let displayGreenText = document.getElementById('first-select');
                         setTimeout(function () {
@@ -85,7 +85,7 @@ function spin() {
                                         displayPurpleText.innerText += purpleUserInput.value + ' ';
                                     }, 3500);
                                 } else {
-                                    if (decimalOfRandomAngle > 0.74 && decimalOfRandomAngle <= 0.91) {
+                                    if (decimalOfRandomAngle > 0.74 && decimalOfRandomAngle <= 0.92) {
                                         let orangeUserInput = document.getElementById('orange-text');
                                         let displayOrangeText = document.getElementById('first-select');
                                         setTimeout(function () {
@@ -104,14 +104,14 @@ function spin() {
         case 2:
             function selectSecondAnswer() {
                 let decimalOfRandomAngle = (randomAngle / 360) % 1;
-                if (decimalOfRandomAngle > 0.92 || decimalOfRandomAngle <= 0.09) {
+                if (decimalOfRandomAngle > 0.92 || decimalOfRandomAngle < 0.09) {
                     let yellowUserInput = document.getElementById('yellow-text');
                     let displayYellowText = document.getElementById('second-select');
                     setTimeout(function () {
                         displayYellowText.innerText += yellowUserInput.value + ' ';
                     }, 3500);
                 } else {
-                    if (decimalOfRandomAngle > 0.09 && decimalOfRandomAngle <= 0.25) {
+                    if (decimalOfRandomAngle >= 0.09 && decimalOfRandomAngle <= 0.25) {
                         let greenUserInput = document.getElementById('green-text');
                         let displayGreenText = document.getElementById('second-select');
                         setTimeout(function () {
@@ -132,14 +132,14 @@ function spin() {
                                     displayRedText.innerText += redUserInput.value + ' ';
                                 }, 3500);
                             } else {
-                                if (decimalOfRandomAngle > 0.57 && decimalOfRandomAngle <= 0.73) {
+                                if (decimalOfRandomAngle > 0.57 && decimalOfRandomAngle <= 0.74) {
                                     let purpleUserInput = document.getElementById('purple-text');
                                     let displayPurpleText = document.getElementById('second-select');
                                     setTimeout(function () {
                                         displayPurpleText.innerText += purpleUserInput.value + ' ';
                                     }, 3500);
                                 } else {
-                                    if (decimalOfRandomAngle > 0.73 && decimalOfRandomAngle <= 0.91) {
+                                    if (decimalOfRandomAngle > 0.74 && decimalOfRandomAngle <= 0.92) {
                                         let orangeUserInput = document.getElementById('orange-text');
                                         let displayOrangeText = document.getElementById('second-select');
                                         setTimeout(function () {
@@ -158,14 +158,14 @@ function spin() {
         case 3:
             function selectThirdAnswer() {
                 let decimalOfRandomAngle = (randomAngle / 360) % 1;
-                if (decimalOfRandomAngle > 0.92 || decimalOfRandomAngle <= 0.09) {
+                if (decimalOfRandomAngle > 0.92 || decimalOfRandomAngle < 0.09) {
                     let yellowUserInput = document.getElementById('yellow-text');
                     let displayYellowText = document.getElementById('third-select');
                     setTimeout(function () {
                         displayYellowText.innerText += yellowUserInput.value + ' ';
                     }, 3500);
                 } else {
-                    if (decimalOfRandomAngle > 0.09 && decimalOfRandomAngle <= 0.25) {
+                    if (decimalOfRandomAngle >= 0.09 && decimalOfRandomAngle <= 0.25) {
                         let greenUserInput = document.getElementById('green-text');
                         let displayGreenText = document.getElementById('third-select');
                         setTimeout(function () {
@@ -186,14 +186,14 @@ function spin() {
                                     displayRedText.innerText += redUserInput.value + ' ';
                                 }, 3500);
                             } else {
-                                if (decimalOfRandomAngle > 0.57 && decimalOfRandomAngle <= 0.73) {
+                                if (decimalOfRandomAngle > 0.57 && decimalOfRandomAngle <= 0.74) {
                                     let purpleUserInput = document.getElementById('purple-text');
                                     let displayPurpleText = document.getElementById('third-select');
                                     setTimeout(function () {
                                         displayPurpleText.innerText += purpleUserInput.value + ' ';
                                     }, 3500);
                                 } else {
-                                    if (decimalOfRandomAngle > 0.73 && decimalOfRandomAngle <= 0.91) {
+                                    if (decimalOfRandomAngle > 0.74 && decimalOfRandomAngle <= 0.92) {
                                         let orangeUserInput = document.getElementById('orange-text');
                                         let displayOrangeText = document.getElementById('third-select');
                                         setTimeout(function () {
@@ -205,7 +205,6 @@ function spin() {
                         };
                     };
                 };
-            console.log(decimalOfRandomAngle);
         };
             selectThirdAnswer();
             setTimeout(() => {
@@ -214,7 +213,8 @@ function spin() {
                     document.querySelectorAll('#first-select, #second-select, #third-select')[2].innerText;
 
                 function alertMessageAndResetSpin() {
-                    alert(`Here you go! I will ${finishedStatement}`);
+                    alert(`Here you go! 
+"I will ${finishedStatement}"`);
                     resetStatement();
                 }
                 alertMessageAndResetSpin();
@@ -227,6 +227,7 @@ function spin() {
             selectFirstAnswer();
             break;
     };
+    console.log(decimalOfRandomAngle);
 };
 
 
