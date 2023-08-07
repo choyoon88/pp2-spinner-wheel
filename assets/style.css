@@ -26,9 +26,8 @@ h1 {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    /* position: absolute;
-    margin: -3px 0 0 170px; */
 }
+
 
 /* Spinner and the wheel cones */
 
@@ -43,6 +42,7 @@ h1 {
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.2);
 }
+
 
 /* cone colours */
 
@@ -83,6 +83,7 @@ h1 {
     /* transition: transform 3s ease-in-out; */
 }
 
+
 /* cone rotations */
 
 .option:nth-child(1) {
@@ -108,6 +109,7 @@ h1 {
 .option:nth-child(6) {
     transform: rotate(300deg);
 }
+
 
 /* spin button */
 
@@ -141,6 +143,7 @@ h1 {
     background-color: #ccc0c0;
     clip-path: polygon(50% 0%, 15% 100%, 85% 100%);
 }
+
 
 /* reset button */
 
@@ -195,7 +198,7 @@ input {
 
 /* Media query */
 
-/* Extra small devices (phones, 600px and down) */
+/* Extra small devices (phones) */
 @media only screen and (max-width: 300px) {
     h1 {
         font-size: 34px;
@@ -277,13 +280,14 @@ input {
     }
 
     span h5 {
-        font-size: 14px;
-        max-height: 15px;
+        font-size: 13px;
+        max-height: 10px;
     }
 
     #text-input {
         right: 10px;
-        top: 930px;
+        top: 850px;
+        margin-top: 100px;
     }
 
     #statement {
@@ -291,22 +295,24 @@ input {
     }
 }
 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     #spinner {
-        width: 300px;
-        height: 300px;
+        width: 400px;
+        height: 400px;
     }
 
     #text-input {
-        top: 1020px;
+        top: 870px;
     }
 
     .option {
-        right: 13%;
+        right: 22%;
     }
 
     #spin-btn {
-        margin: 260px;
+        margin: 300px;
     }
 
     #statement {
@@ -319,27 +325,56 @@ input {
     }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    #spinner {
-        width: 400px;
-        height: 400px;
-    }
-
-
-}
-
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+    .container {
+        display: inline-flex;
+    }
+
+    #statement {
+        text-align: left;
+        margin-left: 60px;
+    }
+
+    #text-input {
+        top: 480px;
+    }
+
+    span h5 {
+        font-size: 15px;
+        max-height: 12px;
+    }
+
+    #rules {
+        font-size: 16px;
+    }
 
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+    .container {
+        display: flex;
+    }
 
+    #statement {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    #rules {
+        text-align: center;
+    }
+    
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+    h1 {
+        font-size: 50px;
+    }
 
+    #text-input {
+        margin-right: 100px;
+    }
 }

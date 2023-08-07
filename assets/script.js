@@ -71,14 +71,14 @@ function spin() {
                                 displayBlueText.innerText += blueUserInput.value + ' ';
                             }, 3500);
                         } else {
-                            if (decimalOfRandomAngle > 0.41 && decimalOfRandomAngle <= 0.57) {
+                            if (decimalOfRandomAngle > 0.41 && decimalOfRandomAngle <= 0.60) {
                                 let redUserInput = document.getElementById('red-text');
                                 let displayRedText = document.getElementById('first-select');
                                 setTimeout(function () {
                                     displayRedText.innerText += redUserInput.value + ' ';
                                 }, 3500);
                             } else {
-                                if (decimalOfRandomAngle > 0.57 && decimalOfRandomAngle <= 0.74) {
+                                if (decimalOfRandomAngle > 0.60 && decimalOfRandomAngle <= 0.74) {
                                     let purpleUserInput = document.getElementById('purple-text');
                                     let displayPurpleText = document.getElementById('first-select');
                                     setTimeout(function () {
@@ -125,14 +125,14 @@ function spin() {
                                 displayBlueText.innerText += blueUserInput.value + ' ';
                             }, 3500);
                         } else {
-                            if (decimalOfRandomAngle > 0.41 && decimalOfRandomAngle <= 0.57) {
+                            if (decimalOfRandomAngle > 0.41 && decimalOfRandomAngle <= 0.60) {
                                 let redUserInput = document.getElementById('red-text');
                                 let displayRedText = document.getElementById('second-select');
                                 setTimeout(function () {
                                     displayRedText.innerText += redUserInput.value + ' ';
                                 }, 3500);
                             } else {
-                                if (decimalOfRandomAngle > 0.57 && decimalOfRandomAngle <= 0.74) {
+                                if (decimalOfRandomAngle > 0.60 && decimalOfRandomAngle <= 0.74) {
                                     let purpleUserInput = document.getElementById('purple-text');
                                     let displayPurpleText = document.getElementById('second-select');
                                     setTimeout(function () {
@@ -179,14 +179,14 @@ function spin() {
                                 displayBlueText.innerText += blueUserInput.value + ' ';
                             }, 3500);
                         } else {
-                            if (decimalOfRandomAngle > 0.41 && decimalOfRandomAngle <= 0.57) {
+                            if (decimalOfRandomAngle > 0.41 && decimalOfRandomAngle <= 0.60) {
                                 let redUserInput = document.getElementById('red-text');
                                 let displayRedText = document.getElementById('third-select');
                                 setTimeout(function () {
                                     displayRedText.innerText += redUserInput.value + ' ';
                                 }, 3500);
                             } else {
-                                if (decimalOfRandomAngle > 0.57 && decimalOfRandomAngle <= 0.74) {
+                                if (decimalOfRandomAngle > 0.60 && decimalOfRandomAngle <= 0.74) {
                                     let purpleUserInput = document.getElementById('purple-text');
                                     let displayPurpleText = document.getElementById('third-select');
                                     setTimeout(function () {
