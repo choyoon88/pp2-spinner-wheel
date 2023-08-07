@@ -80,7 +80,6 @@ h1 {
     height: 0;
     border-left: 114px solid transparent;
     border-right: 111px solid transparent;
-    /* transition: transform 3s ease-in-out; */
 }
 
 
@@ -168,7 +167,7 @@ h1 {
 
 /* text input */
 
-span h5 {
+.text {
     font-size: 16px;
     position: absolute;
     top: 50%;
@@ -230,7 +229,7 @@ input {
         margin: 230px;
     }
 
-    span h5 {
+    .text {
         font-size: 11px;
         max-height: 8px;
     }
@@ -279,7 +278,7 @@ input {
         margin: 260px;
     }
 
-    span h5 {
+    .text {
         font-size: 13px;
         max-height: 10px;
     }
@@ -319,7 +318,7 @@ input {
         font-size: 20px;
     }
 
-    span h5 {
+    .text {
         font-size: 12px;
         max-height: 12px;
     }
@@ -340,7 +339,7 @@ input {
         top: 480px;
     }
 
-    span h5 {
+    .text {
         font-size: 15px;
         max-height: 12px;
     }

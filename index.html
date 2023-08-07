@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
     <title>Spinner Wheels</title>
-    <link rel="icon" href="spinning-wheel.ico" />
+    <link rel="icon" href="spinning-wheel.ico">
   </head>
   <body>
     <h1>Tell Me What To Do, Spinner Wheel!</h1>
     <p id="rules">
-      Rules: Tired of making decisions of what to do next?<br />
+      Rules: Tired of making decisions of what to do next?<br>
       Complete the sentence after 'I will...' with your choices chosen randomly three times by the spinner wheel.<br>
       Simply enter anything on each 6 different cone's text box and click SPIN!<br>
       RESET will reset only the sentence and restart the process.<br>
@@ -19,34 +19,34 @@
     <div class="container">
       <div id="spinner" class="inline-block">
         <div class="option" id="red">
-          <span class="text"><h5></h5></span>
+          <div><p class="text"></p></div>
         </div>
         <div class="option" id="blue">
-          <span class="text"><h5></h5></span>
+          <div><p class="text"></p></div>
         </div>
         <div class="option" id="green">
-          <span class="text"><h5></h5></span>
+          <div><p class="text"></p></div>
         </div>
         <div class="option" id="yellow">
-          <span class="text"><h5></h5></span>
+          <div><p class="text"></p></div>
         </div>
         <div class="option" id="orange">
-          <span class="text"><h5></h5></span>
+          <div><p class="text"></p></div>
         </div>
         <div class="option" id="purple">
-          <span class="text"><h5></h5></span>
+          <div><p class="text"></p></div>
         </div>
       </div>
       <button id="spin-btn" onclick="spin()">spin</button>
       
     </div>
     <div id="text-input" class="inline-block">
-      <div>Red Cone<input type="text" id="red-text" onclick="resetRedText()" maxlength="30"/></div>
-      <div>Blue Cone<input type="text" id="blue-text" onclick="resetBlueText()" maxlength="30"/></div>
-      <div>Green Cone<input type="text" id="green-text" onclick="resetGreenText()" maxlength="30"/></div>
-      <div>Yellow Cone<input type="text" id="yellow-text" onclick="resetYellowText()" maxlength="30"/></div>
-      <div>Orange Cone<input type="text" id="orange-text" onclick="resetOrangeText()" maxlength="30"/></div>
-      <div>Purple Cone<input type="text" id="purple-text" onclick="resetPurpleText()" maxlength="30"/></div>
+      <div>Red Cone<input type="text" id="red-text" onclick="resetRedText()" maxlength="30"></div>
+      <div>Blue Cone<input type="text" id="blue-text" onclick="resetBlueText()" maxlength="30"></div>
+      <div>Green Cone<input type="text" id="green-text" onclick="resetGreenText()" maxlength="30"></div>
+      <div>Yellow Cone<input type="text" id="yellow-text" onclick="resetYellowText()" maxlength="30"></div>
+      <div>Orange Cone<input type="text" id="orange-text" onclick="resetOrangeText()" maxlength="30"></div>
+      <div>Purple Cone<input type="text" id="purple-text" onclick="resetPurpleText()" maxlength="30"></div>
     </div>
     <p id="statement">
       I will... <span id="first-select"></span> <span id="second-select"></span>
@@ -54,11 +54,11 @@
       <button id="reset" onclick="resetStatement()">Reset</button>
     </p>
     <script src="assets/script.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
       rel="stylesheet"
-    />
+   >
   </body>
 </html>
