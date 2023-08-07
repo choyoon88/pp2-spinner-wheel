@@ -377,4 +377,9 @@ input {
     #text-input {
         margin-right: 100px;
     }
+    
+    #rules {
+        font-size: 20px;
+        line-height: 22px;
+    }
 }
