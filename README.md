@@ -2,6 +2,8 @@
 
 This is a spinner wheel that helps the user who are having a hard time what to do next. The user can input 6 different options on each spinning cone, and could spin three times to create a sentense. 
 
+[Go to deployed page](https://choyoon88.github.io/pp2-spinner-wheel/)
+
 # Feature
 
 ![frontpage](readme-image/frontpage.png)
@@ -52,6 +54,25 @@ Conducted JavaScript check by [JSHint](https://jshint.com/)
 ## Functional Testing
 
 # Deployment
+
+The site was deployed to GitHub pages. The steps to deploy are as follows:
+
+1. In the GitHub repository, navigate to the Settings tab.
+2. From the Code and automation menu, select the Pages.
+3. From the Build and deployment section, selected the branch to have Main and /root, then hit save.
+4. Once it is saved, the page will automatically be refreshed and on top of the Github Pages section, the deployed page could be found after 'Your site is live at.' 
+5. [Deployed page](https://choyoon88.github.io/pp2-spinner-wheel/)
+
+## Local Deployment
+
+Local deployment could be done following the steps.
+
+1. From my Gitpod repository, click '<>Code' right next to green 'Gitpod' icon.
+2. Select 'local' and then HTTPS.
+3. Copy the HTTPS address: https://github.com/choyoon88/pp2-spinner-wheel.git
+4. Open terminal on the Mac computer.
+5. Type git clone and paste the HTTPS address.
+6. Install the git developer tools and download the command line in your computer.
 
 # Credits
 
