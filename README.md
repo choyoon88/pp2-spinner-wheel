@@ -27,6 +27,14 @@ Conducted CSS validation check by [The W3C Markup Validation Service](https://va
 - No errors were spotted. 
 
 ## JavaScript
+Conducted JavaScript check by [JSHint](https://jshint.com/)
+- Seven unused variables were found. They initially were called by the onclick function on HTML, so I have changed them to have event listener on JavaScript and it removed the error. 
+
+![jshint](readme-image/jshint-issue.png)
+
+
+
+
 
 
 ## Functional Testing

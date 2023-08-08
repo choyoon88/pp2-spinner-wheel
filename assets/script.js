@@ -5,36 +5,46 @@ function resetStatement() {
     spans.forEach(span => {
         span.textContent = '';
     });
-};
+}
+
+document.getElementById('red-text').addEventListener('click', resetRedText);
+document.getElementById('blue-text').addEventListener('click', resetBlueText);
+document.getElementById('green-text').addEventListener('click', resetGreenText);
+document.getElementById('yellow-text').addEventListener('click', resetYellowText);
+document.getElementById('orange-text').addEventListener('click', resetOrangeText);
+document.getElementById('purple-text').addEventListener('click', resetPurpleText);
+
 
 function resetRedText() {
     document.getElementById('red-text').value = '';
-};
+}
 
 function resetBlueText() {
     document.getElementById('blue-text').value = '';
-};
+}
 
 function resetGreenText() {
     document.getElementById('green-text').value = '';
-};
+}
 
 function resetYellowText() {
     document.getElementById('yellow-text').value = '';
-};
+}
 
 function resetOrangeText() {
     document.getElementById('orange-text').value = '';
-};
+}
 
 function resetPurpleText() {
     document.getElementById('purple-text').value = '';
-};
+}
 
 
 // spin functions
 
 let spinClickCount = 0;
+
+document.getElementById('spin-btn').addEventListener('click', spin);
 
 function spin() {
     const spinner = document.getElementById('spinner');
@@ -91,13 +101,13 @@ function spin() {
                                         setTimeout(function () {
                                             displayOrangeText.innerText += orangeUserInput.value + ' ';
                                         }, 3500);
-                                    };
-                                };
-                            };
-                        };
-                    };
-                };
-            };
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
             setTimeout(selectFirstAnswer, 1000);
             break;
 
@@ -145,13 +155,13 @@ function spin() {
                                         setTimeout(function () {
                                             displayOrangeText.innerText += orangeUserInput.value + ' ';
                                         }, 3500);
-                                    };
-                                };
-                            };
-                        };
-                    };
-                };
-            };
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
             setTimeout(selectSecondAnswer, 1000);
             break;
 
@@ -199,13 +209,13 @@ function spin() {
                                         setTimeout(function () {
                                             displayOrangeText.innerText += orangeUserInput.value + ' ';
                                         }, 3500);
-                                    };
-                                };
-                            };
-                        };
-                    };
-                };
-        };
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+        }
             selectThirdAnswer();
             setTimeout(() => {
                 let finishedStatement = document.querySelectorAll('#first-select, #second-select, #third-select')[0].innerText + 
@@ -226,9 +236,9 @@ function spin() {
             spinClickCount = 1;
             selectFirstAnswer();
             break;
-    };
+    }
     console.log(decimalOfRandomAngle);
-};
+}
 
 
 // text input on cones functions
@@ -243,6 +253,7 @@ textInputs.forEach((input, index) => {
 
 function updateConeText(index, value) {
     // Get reference to the specific option and its text element
+    const spinner = document.getElementById('spinner');
     const option = spinner.querySelectorAll('.option')[index];
     const textElement = option.querySelector('.text h5');
 
@@ -251,5 +262,5 @@ function updateConeText(index, value) {
         textElement.textContent = value;
     } else {
         option.querySelector('.text').textContent = value;
-    };
-};
+    }
+}
