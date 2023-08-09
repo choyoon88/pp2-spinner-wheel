@@ -7,37 +7,15 @@ function resetStatement() {
     });
 }
 
-document.getElementById('red-text').addEventListener('click', resetRedText);
-document.getElementById('blue-text').addEventListener('click', resetBlueText);
-document.getElementById('green-text').addEventListener('click', resetGreenText);
-document.getElementById('yellow-text').addEventListener('click', resetYellowText);
-document.getElementById('orange-text').addEventListener('click', resetOrangeText);
-document.getElementById('purple-text').addEventListener('click', resetPurpleText);
+const colors = ['red', 'blue', 'green', 'yellow', 'orange', 'purple'];
 
-
-function resetRedText() {
-    document.getElementById('red-text').value = '';
+function resetColorText(color) {
+    document.getElementById(`${color}-text`).value = '';
 }
 
-function resetBlueText() {
-    document.getElementById('blue-text').value = '';
-}
-
-function resetGreenText() {
-    document.getElementById('green-text').value = '';
-}
-
-function resetYellowText() {
-    document.getElementById('yellow-text').value = '';
-}
-
-function resetOrangeText() {
-    document.getElementById('orange-text').value = '';
-}
-
-function resetPurpleText() {
-    document.getElementById('purple-text').value = '';
-}
+for (const color of colors) {
+    document.getElementById(`${color}-text`).addEventListener('click', () => resetColorText(color));
+} 
 
 
 // spin functions
@@ -81,14 +59,14 @@ function spin() {
                                 displayBlueText.innerText += blueUserInput.value + ' ';
                             }, 3500);
                         } else {
-                            if (decimalOfRandomAngle > 0.41 && decimalOfRandomAngle <= 0.59) {
+                            if (decimalOfRandomAngle > 0.41 && decimalOfRandomAngle <= 0.60) {
                                 let redUserInput = document.getElementById('red-text');
                                 let displayRedText = document.getElementById('first-select');
                                 setTimeout(function () {
                                     displayRedText.innerText += redUserInput.value + ' ';
                                 }, 3500);
                             } else {
-                                if (decimalOfRandomAngle > 0.59 && decimalOfRandomAngle <= 0.74) {
+                                if (decimalOfRandomAngle > 0.60 && decimalOfRandomAngle <= 0.74) {
                                     let purpleUserInput = document.getElementById('purple-text');
                                     let displayPurpleText = document.getElementById('first-select');
                                     setTimeout(function () {
@@ -113,7 +91,6 @@ function spin() {
 
         case 2:
             function selectSecondAnswer() {
-                let decimalOfRandomAngle = (randomAngle / 360) % 1;
                 if (decimalOfRandomAngle > 0.92 || decimalOfRandomAngle < 0.09) {
                     let yellowUserInput = document.getElementById('yellow-text');
                     let displayYellowText = document.getElementById('second-select');
@@ -135,14 +112,14 @@ function spin() {
                                 displayBlueText.innerText += blueUserInput.value + ' ';
                             }, 3500);
                         } else {
-                            if (decimalOfRandomAngle > 0.41 && decimalOfRandomAngle <= 0.59) {
+                            if (decimalOfRandomAngle > 0.41 && decimalOfRandomAngle <= 0.60) {
                                 let redUserInput = document.getElementById('red-text');
                                 let displayRedText = document.getElementById('second-select');
                                 setTimeout(function () {
                                     displayRedText.innerText += redUserInput.value + ' ';
                                 }, 3500);
                             } else {
-                                if (decimalOfRandomAngle > 0.59 && decimalOfRandomAngle <= 0.74) {
+                                if (decimalOfRandomAngle > 0.60 && decimalOfRandomAngle <= 0.74) {
                                     let purpleUserInput = document.getElementById('purple-text');
                                     let displayPurpleText = document.getElementById('second-select');
                                     setTimeout(function () {
@@ -167,7 +144,6 @@ function spin() {
 
         case 3:
             function selectThirdAnswer() {
-                let decimalOfRandomAngle = (randomAngle / 360) % 1;
                 if (decimalOfRandomAngle > 0.92 || decimalOfRandomAngle < 0.09) {
                     let yellowUserInput = document.getElementById('yellow-text');
                     let displayYellowText = document.getElementById('third-select');
@@ -189,14 +165,14 @@ function spin() {
                                 displayBlueText.innerText += blueUserInput.value + ' ';
                             }, 3500);
                         } else {
-                            if (decimalOfRandomAngle > 0.41 && decimalOfRandomAngle <= 0.59) {
+                            if (decimalOfRandomAngle > 0.41 && decimalOfRandomAngle <= 0.60) {
                                 let redUserInput = document.getElementById('red-text');
                                 let displayRedText = document.getElementById('third-select');
                                 setTimeout(function () {
                                     displayRedText.innerText += redUserInput.value + ' ';
                                 }, 3500);
                             } else {
-                                if (decimalOfRandomAngle > 0.59 && decimalOfRandomAngle <= 0.74) {
+                                if (decimalOfRandomAngle > 0.60 && decimalOfRandomAngle <= 0.74) {
                                     let purpleUserInput = document.getElementById('purple-text');
                                     let displayPurpleText = document.getElementById('third-select');
                                     setTimeout(function () {
