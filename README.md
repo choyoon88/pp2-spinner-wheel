@@ -1,6 +1,6 @@
 # Spinner Wheel
 
-This is a spinner wheel that helps the user who are having a hard time what to do next. The user can input 6 different options on each spinning cone, and could spin three times to create a sentense. 
+This is a spinner wheel that helps the user who is having a hard time what to do next. It could be used for entertainment purposes as well for letting someone do something later or not. The user can input 6 different options on each spinning cone, and can spin three times to create a sentence. 
 
 [Go to deployed page](https://choyoon88.github.io/pp2-spinner-wheel/)
 
@@ -8,13 +8,13 @@ This is a spinner wheel that helps the user who are having a hard time what to d
 
 ![frontpage](readme-image/frontpage.png)
 
-This is a very simple webpage. On the page top there is the rule of how the spinner wheel works. In the middle, there's the spinner wheel with a spin button on the middle of the spinner. 
+This is a very simple webpage. On the top page there is the rule of how the spinner wheel works. In the middle, there's the spinner wheel with a spin button on top of the spinner. 
 
-On the right-hand side or on the bottom of the spinner wheel for smaller screen size (width size less than 768px), we have 6 text input areas that links to each of the colour cone. The typed test on the input will show up on the corresponding colour cone. 
+On the right-hand side or on the bottom of the spinner wheel for smaller screen sizes (width size less than 768px), we have 6 text input areas that link to each of the colour cones. The typed text on the input area will show up on the corresponding colour cone. 
 
 ![small screen mv](readme-image/small%20screen%20movie.gif)
 
-When the user clicks 'spin', the spinner wheel is spin to a random number of angle for 3 seconds. The cone that is on the top will be selected and the selected input text will automatically show up after the statement 'I will...'. 
+When the user clicks 'spin', the spinner wheel will spin to a random number of angles for 3 seconds. The cone that the arrow touches will be selected and the selected input text will automatically show up after the statement 'I will...'. 
 
 User can create a sentence by clicking the spin three times and once the last spin is done, an alert message will show up with the finished sentence. 
 
