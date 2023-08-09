@@ -61,6 +61,15 @@ Conducted JavaScript check by [JSHint](https://jshint.com/)
 ![resetwarning](readme-image/jshint-reset-error.png)
 
 
+## Lighthouse
+
+### Desktop
+![lighthouse-desktop](readme-image/lighthouse-desktop.png)
+
+
+### Mobile
+![lighthouse-mobile](readme-image/lighthouse-mobile.png)
+
 ## Functional Testing
 
 # Deployment
