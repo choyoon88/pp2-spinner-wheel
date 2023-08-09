@@ -46,9 +46,19 @@ Conducted CSS validation check by [The W3C Markup Validation Service](https://va
 
 ## JavaScript
 Conducted JavaScript check by [JSHint](https://jshint.com/)
-- Seven unused variables were found. They initially were called by the onclick function on HTML, so I have changed them to have event listener on JavaScript and it solved the issue. 
+
+- Seven unused variables were found. They initially were called by the onclick function on HTML.
+
+    - Changed them to have event listener on JavaScript and solved the issue. 
 
 ![jshint](readme-image/jshint-issue.png)
+
+- After simplifying the reset function, I got an a warning saying,
+
+    >Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (resetColorText)
+    - Changed the `for` loop to `forEach` and fixed the issue.
+
+![resetwarning](readme-image/jshint-reset-error.png)
 
 
 ## Functional Testing

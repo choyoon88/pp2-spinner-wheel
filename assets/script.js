@@ -13,9 +13,9 @@ function resetColorText(color) {
     document.getElementById(`${color}-text`).value = '';
 }
 
-for (const color of colors) {
+colors.forEach(color => {
     document.getElementById(`${color}-text`).addEventListener('click', () => resetColorText(color));
-} 
+});
 
 
 // spin functions
