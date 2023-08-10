@@ -5,6 +5,8 @@ function resetStatement() {
     spans.forEach(span => {
         span.textContent = '';
     });
+    spinClickCount = 0;
+    spinCounter();
 }
 
 const colors = ['red', 'blue', 'green', 'yellow', 'orange', 'purple'];
@@ -204,6 +206,7 @@ function spin() {
 "I will ${finishedStatement}"`);
                     resetStatement();
                     spinClickCount = 0;
+                    spinCounter();
                 }
                 alertMessageAndResetSpin();
             }, 4000);

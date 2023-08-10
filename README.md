@@ -1,6 +1,6 @@
 # Spinner Wheel
 
-![amiresponsive](/readme-image/spinnerwheel-amiresponsive.png)
+![amiresponsive](readme-image/spinnerwheel-responsive.png)
 
 This is a spinner wheel that helps the user who is having a hard time what to do next. It could be used for entertainment purposes as well for letting someone do something later or not. The user can input 6 different options on each spinning cone, and can spin three times to create a sentence. 
 
@@ -8,13 +8,20 @@ This is a spinner wheel that helps the user who is having a hard time what to do
 
 # Feature
 
+
+## Front Page
 ![frontpage](readme-image/frontpage.png)
 
 This is a very simple webpage. On the top page there is the rule of how the spinner wheel works. In the middle, there's the spinner wheel with a spin button on top of the spinner. 
 
+
+## Text Input Areas
 On the right-hand side or on the bottom of the spinner wheel for smaller screen sizes (width size less than 768px), we have 6 text input areas that link to each of the colour cones. The typed text on the input area will show up on the corresponding colour cone. 
 
 ![small screen mv](readme-image/small%20screen%20movie.gif)
+
+
+## Spinner
 
 When the user clicks 'spin', the spinner wheel will spin to a random number of angles for 3 seconds. The cone that the arrow touches will be selected and the selected input text will automatically show up after the statement 'I will...'. 
 
@@ -22,6 +29,11 @@ User can create a sentence by clicking the spin three times and once the last sp
 
 ![spinner wheel demo](readme-image/spinner-demo.gif)
 
+## Spin Counter
+
+Spin counter will let the user know how many spins they have been done so far. The spin counter is set to 0 as default, and will increment to 1 once the user clicks the spin button. It will reset to 0 when the spin count reaches to 3 or the user presses the reset button. 
+
+![spin counter](readme-image/spin-counter-mv.gif)
 
 
 # Testing
