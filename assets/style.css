@@ -194,6 +194,10 @@ input {
     margin: 5px;
 }
 
+#spin-count-text {
+    text-align: center;
+}
+
 
 /* Media query */
 

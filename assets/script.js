@@ -28,6 +28,7 @@ function spin() {
     const spinner = document.getElementById('spinner');
     const randomAngle = Math.floor(Math.random() * 3600 + 360);
     spinClickCount++;
+    spinCounter();
 
     spinner.style.transition = 'transform 3s ease-out';
     spinner.style.transform = `rotate(${randomAngle}deg)`;
@@ -202,6 +203,7 @@ function spin() {
                     alert(`Here you go! 
 "I will ${finishedStatement}"`);
                     resetStatement();
+                    spinClickCount = 0;
                 }
                 alertMessageAndResetSpin();
             }, 4000);
@@ -213,7 +215,6 @@ function spin() {
             selectFirstAnswer();
             break;
     }
-    console.log(decimalOfRandomAngle);
 }
 
 
@@ -231,12 +232,18 @@ function updateConeText(index, value) {
     // Get reference to the specific option and its text element
     const spinner = document.getElementById('spinner');
     const option = spinner.querySelectorAll('.option')[index];
-    const textElement = option.querySelector('.text h5');
+    const textElement = option.querySelector('.text');
 
     // Update the text content of the corresponding cone
     if (textElement) {
         textElement.textContent = value;
-    } else {
-        option.querySelector('.text').textContent = value;
-    }
+    } 
+}
+
+
+// function for showing spin counts to the user
+
+function spinCounter() {
+    const spinCounterDisplay = document.getElementById('spin-counter');
+    spinCounterDisplay.textContent = spinClickCount;
 }

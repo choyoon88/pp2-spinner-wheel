@@ -34,9 +34,8 @@ Conducted HTML validation check by [The W3C Markup Validation Service](https://v
 <div class="option" id="red">
     <span class="text"><h5></h5></span>
 ```
-> Changed span to `div` and h5 as `p`.
-\
-> Fixed `class="text"` to be the class for p.
+- Changed span to `div` and h5 as `p`.
+- Fixed `class="text"` to be the class for p.
 ```
 <div class="option" id="red">
     <div><p class="text"></p></div>
@@ -73,6 +72,10 @@ Conducted JavaScript check by [JSHint](https://jshint.com/)
 ![lighthouse-mobile](readme-image/lighthouse-mobile.png)
 
 ## Functional Testing
+
+| Action | Expected Behavior    | Pass or Fail    |
+| :---:   | :---: | :---: |
+| 
 
 # Deployment
 
