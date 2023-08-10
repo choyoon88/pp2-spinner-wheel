@@ -1,5 +1,7 @@
 # Spinner Wheel
 
+![amiresponsive](/readme-image/spinnerwheel-amiresponsive.png)
+
 This is a spinner wheel that helps the user who is having a hard time what to do next. It could be used for entertainment purposes as well for letting someone do something later or not. The user can input 6 different options on each spinning cone, and can spin three times to create a sentence. 
 
 [Go to deployed page](https://choyoon88.github.io/pp2-spinner-wheel/)
