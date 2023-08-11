@@ -1,5 +1,6 @@
 body {
     font-family: 'Ubuntu', sans-serif;
+    background-color: rgb(108 208 197 / 20%);
 }
 
 h1 {
@@ -345,7 +346,7 @@ input {
 
     .text {
         font-size: 15px;
-        max-height: 12px;
+        max-height: 17px;
     }
 
     #rules {
