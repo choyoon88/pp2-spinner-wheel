@@ -23,7 +23,7 @@ On the right-hand side or on the bottom of the spinner wheel for smaller screen 
 
 ## Spinner
 
-When the user clicks 'spin', the spinner wheel will spin to a random number of angles for 3 seconds. The cone that the arrow touches will be selected and the selected input text will automatically show up after the statement 'I will...'. 
+When the user clicks 'spin', the spinner wheel will spin to a random number of angles for 3 seconds. The selected text depends on the angle of the cone, but for the users perspective the cone that the arrow touches will be selected. The text on the selected cone will automatically show up after the statement 'I will...'. 
 
 User can create a sentence by clicking the spin three times and once the last spin is done, an alert message will show up with the finished sentence. 
 
@@ -87,7 +87,20 @@ Conducted JavaScript check by [JSHint](https://jshint.com/)
 
 | Action | Expected Behavior    | Pass or Fail    |
 | :---:   | :---: | :---: |
-| 
+| Click 'SPIN' for the first time | - Spinner wheel should spin for 3 seconds <br> - Spin counter should be 1 from 0 <br> - Selected text should show up after the 'I will...' statement | P |
+| Second 'SPIN' attempt | - Spinner wheel should spin for 3 seconds <br> - Spin counter should be 2 from 1 <br> - Selected text should show up after the first text on the statement section | P |
+| Third 'SPIN' attempt | - Spinner wheel should spin for 3 seconds <br> - Spin counter should be 3 from 2 <br> - Selected text should show up after the second text on the statement section <br> - Popup alert message with the completed statement should show up | P |
+| Close the popup alert message | - Spin counter should reset to 0 <br> - Statement should reset to 'I will...' <br> - Spinner wheel should set back to default degree (0 degree) | P |
+| Red cone is overlapping with the arrow | - Text written on red cone input should be displayed on the statement | P |
+| Blue cone is overlapping with the arrow | - Text written on blue cone input should be displayed on the statement | P |
+| Green cone is overlapping with the arrow | - Text written on green cone input should be displayed on the statement | P |
+| Yellow cone is overlapping with the arrow | - Text written on yellow cone input should be displayed on the statement | P |
+| Orange cone is overlapping with the arrow | - Text written on orange cone input should be displayed on the statement | P |
+| Purple cone is overlapping with the arrow | - Text written on purple cone input should be displayed on the statement | P |
+| Click any input area while text is already written | - Previous text should be removed | P |
+| Click 'RESET' | - Statement should reset back to 'I will...' <br> - Spin counter should reset back to 0 <br> - Spinner wheel should set back to default degree (0 degree) | P |
+
+
 
 # Deployment
 

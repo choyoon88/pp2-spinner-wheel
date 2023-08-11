@@ -7,6 +7,8 @@ function resetStatement() {
     });
     spinClickCount = 0;
     spinCounter();
+    document.getElementById('spinner').style.transform = 'none';
+    document.getElementById('spinner').style.transition = 'none';
 }
 
 const colors = ['red', 'blue', 'green', 'yellow', 'orange', 'purple'];
