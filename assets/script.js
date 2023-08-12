@@ -29,6 +29,20 @@ let spinClickCount = 0;
 document.getElementById('spin-btn').addEventListener('click', spin);
 
 function spin() {
+
+    // Before spinning, check whether there's an empty input area for cone texts.
+    const hasEmptyTextInput = colors.some(color => {
+        const textInput = document.getElementById(`${color}-text`).value;
+        return textInput.trim() === '';
+    })
+
+    if (hasEmptyTextInput) {
+        alert('Please type your options for all cones.');
+        return;
+    }
+    
+
+    // if hasEmptyTextInput is false, move on to the spinning function
     const spinner = document.getElementById('spinner');
     const randomAngle = Math.floor(Math.random() * 3600 + 360);
     spinClickCount++;
@@ -196,11 +210,11 @@ function spin() {
                         }
                     }
                 }
-        }
+            }
             selectThirdAnswer();
             setTimeout(() => {
-                let finishedStatement = document.querySelectorAll('#first-select, #second-select, #third-select')[0].innerText + 
-                    document.querySelectorAll('#first-select, #second-select, #third-select')[1].innerText + 
+                let finishedStatement = document.querySelectorAll('#first-select, #second-select, #third-select')[0].innerText +
+                    document.querySelectorAll('#first-select, #second-select, #third-select')[1].innerText +
                     document.querySelectorAll('#first-select, #second-select, #third-select')[2].innerText;
 
                 function alertMessageAndResetSpin() {
@@ -242,7 +256,7 @@ function updateConeText(index, value) {
     // Update the text content of the corresponding cone
     if (textElement) {
         textElement.textContent = value;
-    } 
+    }
 }
 
 
