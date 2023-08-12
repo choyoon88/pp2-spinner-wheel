@@ -34,7 +34,7 @@ function spin() {
     const hasEmptyTextInput = colors.some(color => {
         const textInput = document.getElementById(`${color}-text`).value;
         return textInput.trim() === '';
-    })
+    });
 
     if (hasEmptyTextInput) {
         alert('Please type your options for all cones.');

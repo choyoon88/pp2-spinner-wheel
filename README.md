@@ -87,9 +87,11 @@ Conducted JavaScript check by [JSHint](https://jshint.com/)
 
 | Action | Expected Behavior    | Pass or Fail    |
 | :---:   | :---: | :---: |
-| Click 'SPIN' for the first time | - Spinner wheel should spin for 3 seconds <br> - Spin counter should be 1 from 0 <br> - Selected text should show up after the 'I will...' statement | P |
-| Second 'SPIN' attempt | - Spinner wheel should spin for 3 seconds <br> - Spin counter should be 2 from 1 <br> - Selected text should show up after the first text on the statement section | P |
-| Third 'SPIN' attempt | - Spinner wheel should spin for 3 seconds <br> - Spin counter should be 3 from 2 <br> - Selected text should show up after the second text on the statement section <br> - Popup alert message with the completed statement should show up | P |
+| Access to deployed website | - Should be able to access the page with no error message | P |
+| Click 'SPIN' without entering any text on at least one cone input area | - Alert message asking to enter all inputs should appear <br> - Spinner wheel should not spin | P | 
+| Click 'SPIN' for the first time after entering every inputs | - Spinner wheel should spin for 3 seconds <br> - Spin counter should be 1 from 0 <br> - Selected text should show up after the 'I will...' statement | P |
+| Second 'SPIN' attempt after entering every inputs | - Spinner wheel should spin for 3 seconds <br> - Spin counter should be 2 from 1 <br> - Selected text should show up after the first text on the statement section | P |
+| Third 'SPIN' attempt after entering every inputs | - Spinner wheel should spin for 3 seconds <br> - Spin counter should be 3 from 2 <br> - Selected text should show up after the second text on the statement section <br> - Popup alert message with the completed statement should show up | P |
 | Close the popup alert message | - Spin counter should reset to 0 <br> - Statement should reset to 'I will...' <br> - Spinner wheel should set back to default degree (0 degree) | P |
 | Red cone is overlapping with the arrow | - Text written on red cone input should be displayed on the statement | P |
 | Blue cone is overlapping with the arrow | - Text written on blue cone input should be displayed on the statement | P |
@@ -98,7 +100,7 @@ Conducted JavaScript check by [JSHint](https://jshint.com/)
 | Orange cone is overlapping with the arrow | - Text written on orange cone input should be displayed on the statement | P |
 | Purple cone is overlapping with the arrow | - Text written on purple cone input should be displayed on the statement | P |
 | Click any input area while text is already written | - Previous text should be removed | P |
-| Click 'RESET' | - Statement should reset back to 'I will...' <br> - Spin counter should reset back to 0 <br> - Spinner wheel should set back to default degree (0 degree) | P |
+| Click 'RESET' | - Statement should reset to 'I will...' <br> - Spin counter should reset back to 0 <br> - Spinner wheel should set back to default degree (0 degree) | P |
 
 
 
